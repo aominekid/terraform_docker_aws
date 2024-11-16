@@ -1,4 +1,12 @@
-# Provider konfigurieren
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 5.55.0"
+    }
+  }
+}
+
 provider "aws" {
-  region = "us-west-2"  # Stelle sicher, dass die Region passt
+  region = "us-west-2"
 }
