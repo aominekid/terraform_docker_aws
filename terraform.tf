@@ -100,7 +100,7 @@ resource "aws_security_group" "docker_sg" {
 
 # EC2-Instanz erstellen
 resource "aws_instance" "docker_instance" {
-  ami           = "ami-04907f297c18de05a" # Amazon Linux 2 AMI
+  ami           = "ami-061dd8b45bc7deb3d" # Amazon Linux 2 AMI
   instance_type = "t2.micro"
   subnet_id     = aws_subnet.docker_subnet.id
   security_groups = [aws_security_group.docker_sg.name]
